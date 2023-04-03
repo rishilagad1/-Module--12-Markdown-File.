@@ -1,0 +1,42 @@
+I describe how to build a new R Markdown file in this blog post.
+
+Launch R studio and make a new R Markdown file as the first step.
+
+
+Step 2: Choose "new file" from the file menu. Markdown R
+
+Step 3: Give it a title (I chose "R markdown").
+
+Step 4: Save the file with HTML set as the default output. After saving the file.
+
+Step 5: Click the "Knit" button in the top left corner and choose "knit to HTML." You will then be prompted to save the file in the html.Rmd format. File saving.
+
+- We can enter tables, R code chunks, photos, etc. in this R markdown file.
+
+We can introduce R code chunks, for instance, by using the code:
+---
+title: "R Markdown"
+author: "Rishi Lagad"
+date: "2023-04-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+Conclusion:
+
+I learned that R markdown is a strong tool for creating dynamic documents in html, pdf, and word formats by incorporating code chunks, tables, and graphics.
+GitHub URL:
+
+https://github.com/rishilagad1/-Module--12-Markdown-File.
